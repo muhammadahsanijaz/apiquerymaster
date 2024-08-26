@@ -6,13 +6,13 @@ namespace APIQueryMaster.AQMEditor
 {
     public class APIQueryMasterEditor : Editor
     {
-        [MenuItem("APIQueryMaster/APISettings")]
+        [MenuItem("Tools/APIQueryMaster/APISettings")]
         static void SelectAPISettings()
         {
             Selection.activeObject = Resources.Load<APISettings>("APISettings");
         }
         
-        [MenuItem("APIQueryMaster/QueryName")]
+        [MenuItem("Tools/APIQueryMaster/QueryName")]
         static void SelectQueryName()
         {
             string[] guids = AssetDatabase.FindAssets("QueryName t:Script");
